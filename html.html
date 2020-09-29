@@ -54,8 +54,13 @@ body {
   <a href="#">Link</a>
   <a href="#">Link</a>
 </div>
-
 <div class="content">
+<p>Date/Time: <span id="datetime"></span></p>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+</script>
   <h2>MyE-Doctor</h2>
   <p>Our new and innovating telemedicine company to assist those in need. Visit the doctor at the comfort of your home. </p>
 </div>
