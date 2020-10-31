@@ -236,11 +236,12 @@ body, html {
       <i class="fa fa-bars"></i>
     </a>
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#id01" class="modal">Login</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
+   
     </a>
   </div>
 
@@ -249,7 +250,7 @@ body, html {
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+ 
   </div>
 </div>
 
@@ -273,7 +274,57 @@ body, html {
     <p>When it comes to the website, we have offered a variety of functions that the user can access. On the top, are clickable tabs that can direct the user into information that is desired.
       Moreover, one of the tabs directs the user into where they can schedule an appoint, while another directs them to descriptions on the doctors.
     </p>
-    <
+    <div class="w3-container" style="padding:128px 16px" id="team">
+      <h3 class="w3-center">OUR AVAILABLE DOCTORS</h3>
+      <p class="w3-center w3-large">Choose from our high class, number one rated doctors internationally.</p>
+      <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-card">
+            <img src="/w3images/team2.jpg" alt="chris" style="width:100%">
+            <div class="w3-container">
+              <h3>Chris</h3>
+              <p class="w3-opacity">Surgeon</p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-card">
+            <img src="/w3images/team1.jpg" alt="chris" style="width:100%">
+            <div class="w3-container">
+              <h3>CHrus</h3>
+              <p class="w3-opacity">Anestheiologist</p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-card">
+            <img src="/w3images/team3.jpg" alt="chris" style="width:100%">
+            <div class="w3-container">
+              <h3>chris</h3>
+              <p class="w3-opacity">nurse</p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-card">
+            <img src="/w3images/team4.jpg" alt="chris" style="width:100%">
+            <div class="w3-container">
+              <h3>chras</h3>
+              <p class="w3-opacity">Web doctor</p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
@@ -312,7 +363,7 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white + ";
     } else {
         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
     }
@@ -353,4 +404,3 @@ function toggleFunction() {
 </style>
 </head>
 <body>
-
