@@ -1,424 +1,90 @@
 <!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
+<html lang="en">
+<head>
+<title>TeleMedicine Website</title>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: gray;
-   color: white;
-   text-align: center;
-}
-
-
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-}
-
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url("butterflies.jpg");
-  min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("/w3images/parallax2.jpg");
-  min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("/w3images/parallax3.jpg");
-  min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
-</style>
-<body>
-  
-  <!DOCTYPE html>
-  <html>
-  <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-  body {font-family: Arial, Helvetica, sans-serif;}
-  
-  /* Full-width input fields */
-  input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  
-  /* Set a style for all buttons */
-  button {
-    background-color: #3a99cf;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  button:hover {
-    opacity: 0.8;
-  }
-  
-  /* Extra styles for the cancel button */
-  .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #1695df;
-  }
-  
-  /* Center the image and position the close button */
-  .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
-  }
-  
-  img.avatar {
-    width: 40%;
-    border-radius: 50%;
-  }
-  
-  .container {
-    padding: 16px;
-  }
-  
-  span.psw {
-    float: right;
-    padding-top: 16px;
-  }
-  
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefeec;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button (x) */
-  .close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: rgb(0, 217, 255);
-    cursor: pointer;
-  }
-  
-  /* Add Zoom Animation */
-  .animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-  }
-  
-  @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
-    to {-webkit-transform: scale(1)}
-  }
-    
-  @keyframes animatezoom {
-    from {transform: scale(0)} 
-    to {transform: scale(1)}
-  }
-  
-  /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
-  }
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
   </style>
-  </head>
-  <body>
+<style>
   
-
-  
-  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-  
-  <div id="id01" class="modal">
-    
-    <form class="modal-content animate" action="/action_page.php" method="post">
-      <div class="imgcontainer">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <img src="logo.png" alt="logo" class="logo" style="width:10%">
-      </div>
-  
-      <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
-  
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-          
-        <button type="submit">Login</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-      </div>
-  
-      <div class="container" style="background-color:#f1f1f1e5">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
-      </div>
-    </form>
-  </div>
-  
-  <script>
-  // Get the modal
-  var modal = document.getElementById('id01');
-  
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-      if (event.target == modal) {
-          modal.style.display = "none";
-      }
-  }
-  </script>
-  
-  </body>
-  </html>
-  
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#id01" class="modal">Login</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"></i> ABOUT</a>
-    <a href="#team" class="w3-bar-item w3-button w3-hide-small"></i> DOCTORS</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-   
-    </a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
- 
-  </div>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small"></span> E-DOCTOR</span>
-  </div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">About E-Doctor</h3>
-  <p>Through E-Doctor, patients from all around the world will be capable of accessing and meeting a certified doctor just from the screen in their homes. 
-    Instead of going out of your way to visit the doctor's office, you could find the perfect doctor for you, right at your fingertips. To put this simply, 
-    patients will be capable of choosing between an assortment of doctors. Once they find the doctor that is most suitable for them, they can schedule online appointments.
-  </p>
-  <div class="w3-row">
-    
-    <h3 class="w3-center">How It Works</h3>
-    <p>When it comes to the website, we have offered a variety of functions that the user can access. On the top, are clickable tabs that can direct the user into information that is desired.
-      Moreover, one of the tabs directs the user into where they can schedule an appoint, while another directs them to descriptions on the doctors.
-    </p>
-    <div class="w3-container" style="padding:128px 16px" id="team">
-      <h3 class="w3-center">OUR AVAILABLE DOCTORS</h3>
-      <p class="w3-center w3-large">Choose from our high class, number one rated doctors internationally.</p>
-      <div class="w3-row-padding w3-grayscale" style="margin-top:64px"></div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="w3-card">
-            <img src="/w3images/team2.jpg" alt="chris" style="width:100%">
-            <div class="w3-container">
-              <h3>Anthony Sei Bien</h3>
-              <p class="w3-opacity">Psychiatrist</p>
-              <p>This doctor will be capable of diagnosing and treating patients with mental disorders. They will provide medicine and therapy to ensure safety for our patients.</p>
-              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-            </div>
-          </div>
-        </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="w3-card">
-            <img src="/w3images/team1.jpg" alt="chris" style="width:100%">
-            <div class="w3-container">
-              <h3>Raj</h3>
-              <p class="w3-opacity">Dermatologist</p>
-              <p>This doctor will be able to assist patients with conflicts regarding their skin, nails, and hair. Over the vast amounts of conditions, they will be able to diagnose and follow with the proper treatment. </p>
-              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-            </div>
-          </div>
-        </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="w3-card">
-            <img src="/w3images/team3.jpg" alt="chris" style="width:100%">
-            <div class="w3-container">
-              <h3>Salman Khan</h3>
-              <p class="w3-opacity">General Practitioner</p>
-              <p>If you wish to have a general checkup, this is the right doctor for you. Dr. Khan will be able to assess all types of patients and determine if they are healthy. </p>
-              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-            </div>
-          </div>
-        </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="w3-card">
-            <img src="/w3images/team4.jpg" alt="chris" style="width:100%">
-            <div class="w3-container">
-              <h3>Karishma Kapoor</h3>
-              <p class="w3-opacity">Pediatrician</p>
-              <p>Ms. Kapoor will introduce your child to the new world of health. She will help your child feel comfortable and excited about health and how they can take care of their body.</p>
-              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-  </div>
-</div>
-
-
-
-
- 
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div>
-
-
-
-
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
+.myclass {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    style:"font-size:160%;"
+}
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white + ";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('butterflies.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+.logo {
+  width: 250px;
+  height: 150px;
+  text-align: center;
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(82, 212, 230);
 }
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-</script>
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+
+
+</style>
+</head>
+<body>
+
+  <div class="myclass">My E-Doctor</div>
+  <div style="font-family:sans-serif;">This is a paragraph.</div>
+  </div>
+</div>
+
+<div class="topnav">
+  <a href="#aboutus">ABOUT US</a>
+  <a href="#doctors">DOCTORS</a>
+  <a href="#references">REFERENCES</a>
+  <a href="progress.html">PROGRESS & RESOURCES</a>
+</div>
+
+
+
+</style>
+</head>
+<body>
+ <div class="row">
+  <div class="logo-row">
+  <img src="logo.png" alt="logo" class="logo">
+  </div>
+</div>
+
 
 </body>
 </html>
-
-<html>
-<head>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.column {
-  float: left;
-  width: 25%;
-  padding: 50px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-</style>
-</head>
-
-
-<div class="footer">
-  <p>All rights reserved, 2020</p>
-</div>
-
-<body>
