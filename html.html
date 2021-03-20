@@ -89,6 +89,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+
 }
 .border {
     margin: 50px;
@@ -104,16 +105,22 @@ p {
 }
 div {text-align: center;
 }
-
+.outline{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
 </style>
 </head>
 <body>
 
 <div class="hero-image">
-  <div class="hero-text">
+  <div class="hero-text outline">
     <h1 style="font-size:50px">E-Doctor</h1>
     <h3>We are there for you!</h3>
-    <button>Log In</button>
   </div>
 </div>
 
@@ -126,7 +133,7 @@ div {text-align: center;
 </div>
 
 
-<div class="box effect1">
+<div class="box effect1 outline">
   <h3 style="color: white;">Our team promises that we will ensure the right care for you</h3>
   </div>
 </div>
