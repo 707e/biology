@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<style>
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #d5eeff;
+    
+}
+.car-wrapper {
+    width: 800px;
+    position: absolute;
+    bottom:0;
+    left: 15%;
+}
+.car-wrapper .car-img{
+    width: 50%;
+}
+
+@keyframes circle {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(365deg);}
+}
+@keyframes forest {
+    0% {left: 0}
+    100% {left: -3840px;}
+}
+.road {
+    width: 2920px;
+    height: 200px;
+    background-color: #484545;
+    position: absolute;
+    bottom: -32px;
+    z-index: -1;
+    background: linear-gradient(0deg, rgb(31, 31, 31) 0%, rgb(156, 156, 156) 100%);
+}
+.road-line {
+    position: absolute;
+    width: 6000px;
+    border: 5px dashed #fff;
+    bottom: 30%;
+    animation-name: forest;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+.main-container {
+    height: 100vh;
+    min-height: 650px;
+    background-position: center left;
+    background-size: 2038px;
+    background-repeat: repeat-x;
+    position: relative;
+    overflow-X: hidden;
+    background-image: url('mountain.png');
+  }
+  .forest-img-wrapper {
+    width: 8000px;
+    height: 549px;
+    background-repeat: repeat-x;
+    bottom:0;
+    background-position: center;
+    position: absolute;
+    animation-name: forest;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    background-image: url('car-grass.png');    
+}
+@media (max-width: 640px){
+    .car-wrapper {
+        width: 264px;
+    }
+    
+    .road {
+        height: 80px;
+    }
+    .forest-img-wrapper {
+        height: 232px;
+        background-size: 1597px;
+        background-repeat: repeat-x;
+        bottom: 0;
+    }
+    .road-line {
+        border: 2px dashed #fff;
+    }
+    .main-container {
+        min-height: 483px;
+        background-size: 620px;
+        min-height: 483px;
+        background-size: 620px;
+        background-position: 0 74%;
+    }
+}
+ul {
+  list-style-type: none;
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  float:left;
+}
+
+li a {
+  display:flex;
+  padding: 62px;
+
+}
+</style>
+
+</head>
+
+<body>
+<div class="main-container">
+        <div class="forest-img-wrapper"></div>
+        <h1 style="font-family:Comic Sans MS;text-align:center;color:yellow;font-size:70px;">African Elephants!</h1>
+        <ul>
+            <li style="font-family:Comic Sans MS;text-align:center;font-size:25px;"><a href="About Us!.html">About Us!</a></li>
+            <li style="font-family:Comic Sans MS;text-align:center;font-size:25px;"><a href="Hardy Weinberg.html">Hardy Weinberg</a></li>
+            <li style="font-family:Comic Sans MS;text-align:center;font-size:25px;"><a href="Adaptation.html">Adaptation</a></li>
+            <li style="font-family:Comic Sans MS;text-align:center;font-size:25px;"><a href="Mating & Mutations.html">Mating & Mutations</a></li>
+          </ul>
+    
+        <div class="car-wrapper">
+            <img class="car-img" src="elephant.gif" />
+           
+      </div>
+      <div class="road">
+         <div class="road-line"></div>
+      </div>
+
+
+    
+
+
+
+
+</body>
+</html>                        
